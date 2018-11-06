@@ -1,7 +1,7 @@
-#ifndef ANIMATION_H
-#define ANIMATION_H
+#ifndef PLAYER_FSM_H
+#define PLAYER_FSM_H
 
-class Animation
+class PlayerFSM
 {
 
 	// Please review very good article on Stackoverflow
@@ -13,8 +13,8 @@ private:
 							// prior to setCurrent
 	class State* m_previous;
 public:
-	Animation();
-	~Animation();
+	PlayerFSM();
+	~PlayerFSM();
 	void setCurrent(State* s);
 	void setPrevious(State* s);
 	State* getCurrent();

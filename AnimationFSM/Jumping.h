@@ -8,8 +8,8 @@ class Jumping : public State
 public:
 	Jumping() {};
 	~Jumping() {};
-	void idle(Animation* a);
-	void climbing(Animation* a);
+	void idle(PlayerFSM* a);
+	void climbing(PlayerFSM* a);
 };
 
 #endif // !IDLE_H

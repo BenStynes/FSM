@@ -4,13 +4,13 @@
 
 #include <string>
 
-void Jumping::idle(Animation* a)
+void Jumping::idle(PlayerFSM* a)
 {
 	std::cout << "Jumping -> Idle" << std::endl;
 	a->setCurrent(new Idle());
 	delete this;
 }
-void Jumping::climbing(Animation* a)
+void Jumping::climbing(PlayerFSM* a)
 {
 	std::cout << "Jumping -> Climbing" << std::endl;
 	a->setCurrent(new Climbing());

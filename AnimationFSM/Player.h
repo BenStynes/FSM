@@ -2,13 +2,13 @@
 #define PLAYER_H
 
 #include <Input.h>
-#include <Animation.h>
+#include <PlayerFSM.h>
 #include <AnimatedSprite.h>
 
 class Player
 {
 private:
-	Animation m_animation;
+	PlayerFSM m_state;
 	AnimatedSprite m_animated_sprite;
 	Player();
 

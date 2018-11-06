@@ -10,8 +10,8 @@ public:
 	~Idle() {};
 	void handleInput();
 	void update();
-	void jumping(Animation* a);
-	void climbing(Animation* a);
+	void jumping(PlayerFSM* a);
+	void climbing(PlayerFSM* a);
 };
 
 #endif // !IDLE_H
