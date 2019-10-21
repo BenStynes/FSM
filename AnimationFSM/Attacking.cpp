@@ -1,13 +1,6 @@
 #include "Attacking.h"
 #include <Defending.h>
 #include <Taunting.h>
-#include <Idle.h>
-void Attacking::idle(PlayerFSM* a)
-{
-	std::cout << "Attacking -> idle" << std::endl;
-	a->setCurrent(new Idle());
-	delete this;
-}
 
 void Attacking::defending(PlayerFSM* a)
 {

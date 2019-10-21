@@ -1,14 +1,8 @@
-#include <Idle.h>
 #include <Jumping.h>
 #include <Running.h>
 #include <Climbing.h>
 
-void Running::idle(PlayerFSM* a)
-{
-	std::cout << "Running -> idle" << std::endl;
-	a->setCurrent(new Idle());
-	delete this;
-}
+
 
 void Running::climbing(PlayerFSM* a)
 {

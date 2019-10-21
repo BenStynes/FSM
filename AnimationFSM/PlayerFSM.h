@@ -12,6 +12,7 @@ private:
 	class State* m_current; // note order of m_current is 
 							// prior to setCurrent
 	class State* m_previous;
+	
 public:
 	PlayerFSM();
 	~PlayerFSM();

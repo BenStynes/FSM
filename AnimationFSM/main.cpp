@@ -35,6 +35,7 @@ int main()
 	// Start the game loop
 	while (window.isOpen())
 	{
+		player.i++;
 		// Process events
 		sf::Event event;
 		while (window.pollEvent(event))
@@ -74,14 +75,11 @@ int main()
 				{
 					input.setCurrent(Input::Action::THREE);
 				}
-				
+			
 				break;
 			default:
 				player.handleInput(input);
-				 if (!Input::Action::IDLE)
-				{
-					input.setCurrent(Input::Action::IDLE);
-				}
+				input.setCurrent(Input::Action::IDLE);
 				break;
 			}
 		}

@@ -8,7 +8,6 @@ class Running : public State
 public:
 	Running() {};
 	~Running() {};
-	void idle(PlayerFSM* a);
 	void climbing(PlayerFSM* a);
 	void running(PlayerFSM* a);
 	void jumping(PlayerFSM* a);
