@@ -77,10 +77,13 @@ int main()
 				
 				break;
 			default:
-				input.setCurrent(Input::Action::IDLE);
+				player.handleInput(input);
+				 if (!Input::Action::IDLE)
+				{
+					input.setCurrent(Input::Action::IDLE);
+				}
 				break;
 			}
-			player.handleInput(input);
 		}
 
 		// Handle input to Player
