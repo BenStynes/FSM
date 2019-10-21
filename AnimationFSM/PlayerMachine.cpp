@@ -42,3 +42,23 @@ void PlayerFSM::climbing()
 {
 	m_current->climbing(this);
 }
+
+void PlayerFSM::attacking()
+{
+	m_current->attacking(this);
+}
+
+void PlayerFSM::defending()
+{
+	m_current->defending(this);
+}
+
+void PlayerFSM::taunting()
+{
+	m_current->taunting(this);
+}
+
+void PlayerFSM::running()
+{
+	m_current->running(this);
+}

@@ -27,6 +27,22 @@ public:
 	{
 		DEBUG_MSG("State::Climbing");
 	}
+	virtual void attacking(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::Attacking");
+	}
+	virtual void defending(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::defending");
+	}
+	virtual void taunting(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::Taunting");
+	}
+	virtual void running(PlayerFSM* a)
+	{
+		DEBUG_MSG("State::Running");
+	}
 };
 
 #endif // ! ANIMATION_H

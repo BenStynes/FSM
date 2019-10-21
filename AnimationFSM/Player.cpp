@@ -46,6 +46,22 @@ void Player::handleInput(Input in)
 		//std::cout << "Player Idling" << std::endl;
 		m_state.jumping();
 		break;
+	case Input::Action::SPACE:
+		//std::cout << "Player Idling" << std::endl;
+		m_state.attacking();
+		break;
+	case Input::Action::ONE:
+		//std::cout << "Player Idling" << std::endl;
+		m_state.running();
+		break;
+	case Input::Action::TWO:
+		//std::cout << "Player Idling" << std::endl;
+		m_state.taunting();
+		break;
+	case Input::Action::THREE:
+		//std::cout << "Player Idling" << std::endl;
+		m_state.defending();
+		break;
 	default:
 		break;
 	}

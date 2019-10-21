@@ -58,15 +58,33 @@ int main()
 				{
 					input.setCurrent(Input::Action::UP);
 				}
+				else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+				{
+					input.setCurrent(Input::Action::SPACE);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num1))
+				{
+					input.setCurrent(Input::Action::ONE);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num2))
+				{
+					input.setCurrent(Input::Action::TWO);
+				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Num3))
+				{
+					input.setCurrent(Input::Action::THREE);
+				}
+				
 				break;
 			default:
 				input.setCurrent(Input::Action::IDLE);
 				break;
 			}
+			player.handleInput(input);
 		}
 
 		// Handle input to Player
-		player.handleInput(input);
+		
 
 		// Update the Player
 		player.update();
